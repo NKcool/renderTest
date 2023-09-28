@@ -1,0 +1,38 @@
+GET http://localhost:4000/users
+
+########
+POST http://localhost:4000/users
+Content-Type: application/json
+
+{
+    "name":"naveenn",
+    "password":"1234",
+    "language":"english"
+}
+
+#########
+
+POST http://localhost:4000/users/login
+Content-Type: application/json
+
+{
+    "name":"naveenn",
+    "password":"1234"
+}
+#########
+
+POST http://localhost:4000/changelanguage
+Content-Type: application/json
+
+{
+    "id":"6513e17863eba08cf4caf55d",
+    "language":"hindi"
+}
+#########
+
+POST http://localhost:4000/questions
+Content-Type: application/json
+
+{
+   "language":"hindi"
+}
